@@ -7,8 +7,10 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "esnext",
-    "target": "esnext",
+    "target": "es2020",
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     // "types": [],
     // For nodejs:
     "lib": ["ESNext", "DOM"],
@@ -41,5 +43,5 @@
     "moduleDetection": "force",
     "skipLibCheck": true
   },
-  "include": ["./src/"]
+  "include": ["src/**/*.ts"]
 }
